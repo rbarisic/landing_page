@@ -1,0 +1,30 @@
+{
+  "name": "landing_page",
+  "version": "0.0.0",
+  "authors": [
+    "Robert Barisic <r.barisic@drooms.com>"
+  ],
+  "description": "A landing page written with purecss",
+  "main": "index.html",
+  "moduleType": [
+    "yui"
+  ],
+  "keywords": [
+    "pure",
+    "purecss"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.xrlabs.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "purecss": "~0.5.0",
+    "normalize.css": "~3.0.2",
+    "fontawesome": "~4.2.0"
+  }
+}
