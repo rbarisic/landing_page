@@ -1,0 +1,125 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+.desktop-only {
+  display: none;
+  visibility: hidden;
+}
+
+.text-centered {
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-head {
+  font-weight: 200;
+  margin: 2em auto;
+}
+
+.l-box {
+  padding: 1em;
+}
+
+.splash-container {
+  color: white;
+  background-color: crimson;
+  background: url('../images/background.jpg');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.splash {
+  margin: auto;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1em;
+
+  overflow: hidden;
+}
+
+.splash-head {
+
+  font-weight: 100;
+  font-size: 200%;
+
+  padding: 1em;
+
+}
+
+.content-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 80%;  
+}
+
+.content {
+  padding: 1em;
+  color: #fff;
+}
+
+.content.white {
+  color: #333;
+  background-color: #eee;
+}
+
+.content.dark {
+  color: #eee;
+  background-color: #333;
+}
+
+.footer {
+  padding: 1em;
+  color: #eee;
+}
+
+.pure-button {
+  color: white;
+  background-color: #ffa500;
+}
+
+.pure-button-large {
+  font-size: 150%;
+}
+
+@media screen and (min-width: 48em) {
+
+  .splash {
+    width: 50%;
+    padding: 2em;
+  }
+
+  .splash-head {
+    font-size: 300%;
+
+    border: 3px solid white;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 80em) {
+
+  .content {
+  }
+
+  .desktop-only {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+
+#footer {
+  height: 100vh;
+  overflow: hidden;
+}
