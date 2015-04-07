@@ -2,6 +2,26 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+a {
+  color: orange;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.show-on-scroll {
+  position: fixed;
+  text-align: center;
+  right: 0;
+  bottom: 1em;
+  z-index: 200;
+
+  background-color: #111;
+  padding: 0.5em;
+  border-radius: 20px 0 0 20px;
+}
+
 .desktop-only {
   display: none;
   visibility: hidden;
@@ -108,9 +128,72 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (min-width: 80em) {
+#footer {
+  height: 100vh;
+  overflow: hidden;
+}
 
-  .content {
+#to-top {
+  color: #fff;
+}
+
+#to-top:visited {
+  color: #fff;
+}
+
+#to-top:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.fa.head {
+  margin-right: 0.3em;
+}
+
+.pure-form.full input[type="text"],
+.pure-form.full input[type="password"],
+.pure-form.full input[type="email"],
+.pure-form.full input[type="url"],
+.pure-form.full input[type="date"],
+.pure-form.full input[type="month"],
+.pure-form.full input[type="time"],
+.pure-form.full input[type="datetime"],
+.pure-form.full input[type="datetime-local"],
+.pure-form.full input[type="week"],
+.pure-form.full input[type="number"],
+.pure-form.full input[type="search"],
+.pure-form.full input[type="tel"],
+.pure-form.full input[type="color"],
+.pure-form.full select,
+.pure-form.full textarea,
+.pure-form.full button {
+  width: 80vw;
+  margin: 0.5em auto;
+  padding: 1em;
+}
+
+@media screen and (min-width: 40em ) {
+  .pure-form.full input[type="text"],
+  .pure-form.full input[type="password"],
+  .pure-form.full input[type="email"],
+  .pure-form.full input[type="url"],
+  .pure-form.full input[type="date"],
+  .pure-form.full input[type="month"],
+  .pure-form.full input[type="time"],
+  .pure-form.full input[type="datetime"],
+  .pure-form.full input[type="datetime-local"],
+  .pure-form.full input[type="week"],
+  .pure-form.full input[type="number"],
+  .pure-form.full input[type="search"],
+  .pure-form.full input[type="tel"],
+  .pure-form.full input[type="color"],
+  .pure-form.full select,
+  .pure-form.full textarea,
+  .pure-form.full button {
+  width: auto;
+  margin: auto;
+  padding: 0.5em 1em;
   }
 
   .desktop-only {
@@ -119,7 +202,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#footer {
-  height: 100vh;
-  overflow: hidden;
+@media screen and (min-width: 80em) {
+
 }
